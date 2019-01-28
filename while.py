@@ -71,13 +71,15 @@ while a <= LIMIT:
 
 print()
 
+
+#### FINAL RESULT
+
 limit = 5
 A = 1
+B = 5
 while A <= limit:
-    for B in range(2, A+1):
-        if A == 2:
-            print('%d ' % (B), end='')
-        else:
-            print('%d ' % (B), end='')
+    while B >= A:
+        print('%d ' % (A*B), end='')
+        B-=1
     print()
     A+=1
