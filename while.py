@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.5
+# Logic exercise
 
 BARIS = 5
 i = 1
