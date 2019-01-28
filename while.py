@@ -13,10 +13,6 @@ while i <= BARIS:
         for l in range(i, 1, -1):
             print('%d ' % (l*i),end='')
 
-        #while l<=i:
-        #    print('%d ' % (i*l), end='')
-        #    l+=1
-
         while j<=i:
             print('%d ' % (i*j), end='')
             j+=1
@@ -49,26 +45,12 @@ print()
 
 ##################################################################
 ##################################################################
-
-BARIS = 5
-KOLOM = 3
-d = 1
-while d <= BARIS:
-    for f in range(1, KOLOM+1):
-        print('%d %d | ' % (d,f), end='')
-    print() # new line
-    d+=1
-
-
-print()
-
 #### FINAL RESULT
 
 BOUNDARIES = 5
-A = 1
+A = 2
 while A <= BOUNDARIES:
     for B in range(A, 1, -1):
-        print('A = %d B %d' % (A,B), end='')
+        print('%d ' % (A*B), end='')
     print()
     A+=1
-
