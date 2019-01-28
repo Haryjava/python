@@ -28,5 +28,7 @@ function ProgressBar {
 		    do
 			        sleep 0.1
 				    ProgressBar ${number} ${_end}
-			    done
+			done
+			echo ""
+			python3.5 /home/hary/Documents/python/while.py
 			    printf '\nFinished!\n'
