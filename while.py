@@ -7,13 +7,15 @@ BARIS = 5
 i = 1
 while i <= BARIS:
         j = 1
-        l = 2
         for x in range(1, BARIS):
             print("+ ", end='')
 
-        while l<=i:
-            print('%d ' % (i*l), end='')
-            l+=1
+        for l in range(i, 1, -1):
+            print('%d ' % (l*i),end='')
+
+        #while l<=i:
+        #    print('%d ' % (i*l), end='')
+        #    l+=1
 
         while j<=i:
             print('%d ' % (i*j), end='')
@@ -60,28 +62,13 @@ while d <= BARIS:
 
 print()
 
-LIMIT = 5
-a = 1
-while a <= LIMIT:
-    for b in range(2, a+1):
-        if a == 2:
-            print('%d ' % (a*b), end='')
-        else:
-            print('%d ' % (a*b), end='')
-    print()
-    a+=1
-
-print()
-
-
 #### FINAL RESULT
 
-limit = 5
+BOUNDARIES = 5
 A = 1
-B = 5
-while A <= limit:
-    while B >= A:
-        print('%d ' % (A*B), end='')
-        B-=1
+while A <= BOUNDARIES:
+    for B in range(A, 1, -1):
+        print('A = %d B %d' % (A,B), end='')
     print()
     A+=1
+
