@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.5
 # Logic exercise
-# Iniriate by HarysMatta - tifosilinux.wordpress.com
+# Initiate by HarysMatta - tifosilinux.wordpress.com
 
 
 ##################################################################
