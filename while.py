@@ -5,7 +5,7 @@
 import os
 import py_compile
 
-
+# array => cars = ['ford','bmw','toyota','mazda']
 os.chdir("/home/hary/Documents/python/")
 py_compile.compile('/home/hary/Documents/python/while.py')
 
