@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Static input array
-arr=(11 26 9 10 6 50)
+arr=(10 8 20 100 12 8765 341 9 10)
 echo "array in original order"
 
 echo ${arr[*]}
 
 # Performing BubbleSort
-for ((i=0; i<5; i++))
+for((i=0; i<9; i++))
 do
-	for ((j=i; j<5-i-1; j++))
+	for((j=i; j<9-i-1; j++))
 	do
 		if ((${arr[j]} > ${arr[$((j+1))]}))
 		then
