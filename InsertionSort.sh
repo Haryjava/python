@@ -1,30 +1,19 @@
 #!/bin/bash
 
-echo "enter the number"
-read n
-echo "enter number in an array"
-
-for((i=0;i<n;i++))
-do
-	read arr[$i]
-done
-
-#logic for insertion sort
-for((i=1;i<n;i++))
-do
-	j=$i-1
-	temp=${arr[$i]}
-	while((j>=0 && arr[j]>temp))
+function insertionsort{
+	echo "Keadaan awal : ";
+	echo $alist;
+	for i in $(seq 1 len(alist));
 	do
-		arr[$j+1]=${arr[$j]}
-		j=$j-1
+		currentvalue = alist[$i]
+		print("Menyisipkan nilai %d : " % currentvalue);
+		position=$i
+		while($position > 0 && alist[$position-1] > $currentvalue);
+		do
+			alist[$position] = alist[$position-1]
+			$position--
+		done
+		alist[$position] = $currentvalue
+		echo $alist;
 	done
-	arr[j+1]=$temp
-done
-
-#printing sorted array
-echo "printing sorted array"
-for((i=0;i<n;i++))
-do
-	echo ${arr[$i]}
-done
+}
