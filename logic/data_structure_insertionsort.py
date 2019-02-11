@@ -1,4 +1,7 @@
 #!/usr/bin/env python3.5
+import time
+
+start = time.time()
 
 def insertionsort(alist):
     print('Keadaan awal: \t\t', end='')
@@ -18,3 +21,6 @@ data = [56,8,88,1,4,3,17,20,3,87]
 insertionsort(data)
 print()
 print('Jumlah data: \t\t', len(data))
+
+end = time.time()
+print('Speed: \t\t\t', (end-start))

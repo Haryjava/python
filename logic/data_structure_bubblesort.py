@@ -1,4 +1,7 @@
 #!/usr/bin/env python3.5
+import time
+
+start = time.time()
 
 def bubblesort(alist):
     print('Keadaan awal: \t', alist)
@@ -20,3 +23,6 @@ bubblesort(data)
 print('Hasil akhir: \t', data)
 # Count Data
 print('Jumlah Data: \t',len(data))
+
+end = time.time()
+print('Speed: \t\t',(end-start))

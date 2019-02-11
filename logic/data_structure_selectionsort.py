@@ -1,7 +1,10 @@
 #!/usr/bin/env python3.5
+import time
+
+start = time.time()
 
 def selectionsort(alist):
-    print('Keadaan awal: \t\t', alist)
+    print('Keadaan awal: \t', alist)
     for i in range(0, len(alist)-1):
         print('Langkah ke-%d: \t' % (i+1), end='')
         minposition = len(alist)-1
@@ -17,4 +20,7 @@ data = [56,8,88,1,4,3,17,20,3,87]
 
 selectionsort(data)
 print()
-print('Jumlah data: \t\t', len(data))
+print('Jumlah data: \t', len(data))
+
+end = time.time()
+print('Speed: \t\t',(end-start))
