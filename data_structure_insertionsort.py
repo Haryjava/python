@@ -13,6 +13,8 @@ def insertionsort(alist):
         alist[position] = currentvalue
         print(alist)
 
-data = [12,8,15,6,7,10,31,3,1]
+data = [56,8,88,1,4,3,17,20,3,87]
 
 insertionsort(data)
+print()
+print('Jumlah data: \t\t', len(data))
