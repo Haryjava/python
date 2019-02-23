@@ -9,6 +9,7 @@ def selectionsort(alist):
         print('Langkah ke-%d: \t' % (i+1), end='')
         minposition = len(alist)-1
         for j in range(len(alist)-2, i-1, -1):
+            print('%d-%d : ' % (alist[j],alist[minposition]), end='')
             if alist[j] < alist[minposition]:
                 minposition = j
         temp = alist[i]
