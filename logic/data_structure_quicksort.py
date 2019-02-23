@@ -46,8 +46,10 @@ def quickSort(arr,low,high):
 arr = [10, 7, 8, 9, 1, 5] 
 n = len(arr)
 quickSort(arr,0,n-1) 
+
+print('Initate array : ', arr)
 print ("Sorted array is:")
 for i in range(n):
-    print ("%d" %arr[i]), 
+    print ("%d" %arr[i])
 
 # This code is contributed by Mohit Kumra
