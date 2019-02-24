@@ -1,5 +1,7 @@
 #!/usr/bin/env python3.5
 
+import time
+
 # Python program for implementation of Quicksort Sort 
 
 # This function takes last element as pivot, places 
@@ -7,6 +9,9 @@
 # array, and places all smaller (smaller than pivot) 
 # to left of pivot and all greater elements to right 
 # of pivot 
+
+start = time.time()
+
 def partition(arr,low,high):
     i = ( low-1 )        # index of smaller element
     pivot = arr[high]    # pivot
@@ -43,13 +48,18 @@ def quickSort(arr,low,high):
         quickSort(arr, pi+1, high) 
 
 # Driver code to test above 
-arr = [10, 7, 8, 9, 1, 5] 
+arr = [56,8,88,1,4,3,17,20,3,87]
+print('Initiate array : ', arr)
 n = len(arr)
 quickSort(arr,0,n-1) 
 
-print('Initate array : ', arr)
 print ("Sorted array is:")
 for i in range(n):
-    print ("%d" %arr[i])
+    print ("%d " % arr[i], end='')
+
+print()
+print()
+end = time.time()
+print('Speed time : ',(end-start))
 
 # This code is contributed by Mohit Kumra
