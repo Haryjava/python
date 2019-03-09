@@ -20,13 +20,21 @@ def partition(arr,low,high):
 
         # If current element is smaller than or 
         # equal to pivot
+        print('arr[j] & pivot & j = %d & %d & %d \t\t' % (arr[j],pivot,j), end='')
+        print()
         if arr[j] <= pivot:
             
             # increment index of smaller element
             i = i+1
+            print('cond.bf arr[i], arr[j] & i & j = %d & %d & %d & %d \t\t' % (arr[i],arr[j], i, j), end='')
             arr[i],arr[j] = arr[j],arr[i]
-            
+            print('cond.aft arr[i], arr[j] & i & j = %d & %d & %d & %d \t\t' % (arr[i],arr[j], i, j), end='')
+            print()
+
+    print('++++++++++++++++++++++++++++++++++++++++++++')
+    print('before arr[i+1], before arr[high] = %d & %d \t\t' % (arr[i+1],arr[high]), end='')            
     arr[i+1],arr[high] = arr[high],arr[i+1]
+    print('after arr[i+1], after arr[high] = %d & %d \t\t' % (arr[i+1],arr[high]), end='')
     return ( i+1 ) 
 
 # The main function that implements QuickSort 
@@ -36,6 +44,10 @@ def partition(arr,low,high):
 
 # Function to do Quick sort 
 def quickSort(arr,low,high):
+    print()
+    print('kondisi array terkini : ' , arr)
+    print('low & high : %d & %d \t' % (low,high), end='')
+    print()
     if low < high:
     
         # pi is partitioning index, arr[p] is now
