@@ -52,12 +52,15 @@ def quickSort(arr,low,high):
     
         # pi is partitioning index, arr[p] is now
         # at right place
-        pi = partition(arr,low,high) 
-
+        pi = partition(arr,low,high)
+        print('Begin value of element : ', arr, low, high, pi)
+        print()
         # Separately sort elements before
         # partition and after partition
-        quickSort(arr, low, pi-1) 
-        quickSort(arr, pi+1, high) 
+        quickSort(arr, low, pi-1)
+        print('End value of element : ', arr, low, pi-1)
+        quickSort(arr, pi+1, high)
+        print('Get value of element : ', arr, pi+1, high)
 
 # Driver code to test above 
 arr = [56,8,88,1,4,3,17,20,3,87]
